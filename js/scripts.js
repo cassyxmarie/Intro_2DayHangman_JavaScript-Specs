@@ -6,11 +6,11 @@ function PuzzleSelector() {
   this.ourSplitWord = [];
   this.guessedLettersRight = [];
   this.guessedLettersWrong = [];
+  this.numberWrongGuessed = 0;
 };
 
 PuzzleSelector.prototype.gameWord = function(){
-  var wordBank = ["dragon"];
-  // var wordBank = ["cat", "dog", "parrot", "goldfish", "gecko", "turtle", "hamster", "rabbit", "horse", "frog", "ferret", "chinchilla", "hedgehog", "snake", "mouse"];
+  var wordBank = ["cat", "dog", "parrot", "goldfish", "gecko", "turtle", "hamster", "rabbit", "horse", "frog", "ferret", "chinchilla", "hedgehog", "snake", "mouse"];
   var random = wordBank[Math.floor(wordBank.length * Math.random())];
   this.answer = random;
 };
@@ -40,8 +40,34 @@ PuzzleSelector.prototype.userGuess = function(userGuess){
     }
   } else {
     this.guessedLettersWrong.push(userGuess);
+    this.numberWrongGuessed +=1;
   }
 };
+
+$(document).ready(function() {
+  $("#play").click(function(event){
+    $("#puzzle-blanks").empty();
+    var puzzle = new PuzzleSelector;
+    puzzle.gameWord();
+    puzzle.breakUpWord();
+    puzzle.createPuzzle();
+    $("#blanks").show();
+    $("#puzzle-blanks").append(puzzle.dashes);
+    $("#blanks form").submit(function(event) {
+      event.preventDefault();
+      var userInput = $("select#userInput").val();
+      puzzle.userGuess(userInput);
+      $("#puzzle-blanks").empty();
+console.log(puzzle.dashes);
+      if (puzzle.numberWrongGuessed > 6) {
+      $("#puzzle-blanks").append("YOURE A LOSER.");
+      } else {
+        $("#puzzle-blanks").append(puzzle.dashes);
+      };
+    });
+    });
+  });
+
 
 
 // PuzzleSelector.prototype.guess = function(userGuess)

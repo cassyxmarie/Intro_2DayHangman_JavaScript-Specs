@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HangMan</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to hang man!</h1>
+    <h4>Read through the directions and press the <strong>New Game</strong>
+     button to begin!<h4>
+    <p>
+      <ol>Rules:
+        <li>Pick a letter from the drop down to see if it matches a letter in the puzzle!</li>
+        <li>Every time you pick a letter that is not a part of the puzzle, one of your hangman's body parts will show.</li>
+        <li>If you guess the puzzle correctly, before your full hangman is displayed, you win!</li>
+        <li>However, when your full hangman is displayed (after 6 missed letters) you lose.</li>
+      </ol>
+    </p>
+
+    <div id="playgame">
+      <button type="submit" class="btn btn-primary" id="play">PLAY NOW</button>
+    </div>
+
+
+
+    <h4><span id="puzzle-blanks"></span></h4>
+    <div id="blanks">
+      <form>
+        <div class="form-group">
+          <label for="userInput">Enter your guess!</label>
+          <select id="userInput" class="form-control">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+            <option value="e">e</option>
+            <option value="f">f</option>
+            <option value="g">g</option>
+            <option value="h">h</option>
+            <option value="i">i</option>
+            <option value="j">j</option>
+            <option value="k">k</option>
+            <option value="l">l</option>
+            <option value="m">m</option>
+            <option value="n">n</option>
+            <option value="o">o</option>
+            <option value="p">p</option>
+            <option value="q">q</option>
+            <option value="r">r</option>
+            <option value="s">s</option>
+            <option value="t">t</option>
+            <option value="u">u</option>
+            <option value="v">v</option>
+            <option value="w">w</option>
+            <option value="x">x</option>
+            <option value="y">y</option>
+            <option value="z">z</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-default">Check</button>
+      </form>
+    </div>
+    <div id="print">
+      <h1><span class="printMe"></span></h1>
+    </div>
+  </body>
+</html>

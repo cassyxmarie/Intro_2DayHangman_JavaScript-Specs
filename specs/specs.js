@@ -18,7 +18,7 @@ describe("PuzzleSelector", function() {
     word.createPuzzle();
     expect(word.dashes).to.eql(["-", "-", "-", "-", "-", "-"]);
   });
-  it("will use a loop to locate user letter to the ourSplitWord array", function() {
+  it("will use a loop to locate correct user guess letter to the ourSplitWord array and replace a dash at the appropriate position for dashes array, and push correct guessed letter to right guesses array", function() {
     var word = new PuzzleSelector();
     word.gameWord();
     word.breakUpWord();
@@ -27,7 +27,7 @@ describe("PuzzleSelector", function() {
     expect(word.dashes).to.eql(["-", "-", "a", "-", "-", "-"]);
     expect(word.guessedLettersRight).to.eql(["a"]);
   });
-  it("will use a loop to locate user letter to the ourSplitWord array", function() {
+  it("will push wrong guessed letter to wrong guesses array, and add +1 for wrong guesses to this.numberworngguessed", function() {
     var word = new PuzzleSelector();
     word.gameWord();
     word.breakUpWord();
@@ -35,6 +35,7 @@ describe("PuzzleSelector", function() {
     word.userGuess("b");
     expect(word.dashes).to.eql(["-", "-", "-", "-", "-", "-"]);
     expect(word.guessedLettersWrong).to.eql(["b"]);
+    expect(word.numberWrongGuessed).to.equal(1);
   });
 });
   // it("will keep track of every letter a user has guessed", function() {
