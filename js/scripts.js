@@ -42,22 +42,34 @@ PuzzleSelector.prototype.userGuess = function(userGuess){
     this.guessedLettersWrong.push(userGuess);
     this.numberWrongGuessed +=1;
     $("#hangman-img").append("<img class='img-one' src='img/gallow.png'>");
+
   } else if(this.numberWrongGuessed === 1){
+    this.numberWrongGuessed +=1;
     $("#hangman-img").empty("<img class='img-one' src='img/gallow.png'>");
     $("#hangman-img").append("<img class='img-two' src='img/head.png'>");
+
   } else if(this.numberWrongGuessed === 2){
+    this.numberWrongGuessed +=1;
     $("#hangman-img").empty("<img class='img-two' src='img/head.png'>");
     $("#hangman-img").append("<img class='img-three' src='img/torso.png'>");
+
   } else if(this.numberWrongGuessed === 3){
+    this.numberWrongGuessed +=1;
     $("#hangman-img").empty("<img class='img-three' src='img/torso.png'>");
     $("#hangman-img").append("<img class='img-four' src='img/left-arm.png'>");
+
   } else if(this.numberWrongGuessed === 4){
+    this.numberWrongGuessed +=1;
     $("#hangman-img").empty("<img class='img-four' src='img/left-arm.png'>");
     $("#hangman-img").append("<img class='img-five' src='img/right-arm.png'>");
+
   } else if(this.numberWrongGuessed === 5){
+    this.numberWrongGuessed +=1;
     $("#hangman-img").empty("<img class='img-five' src='img/right-arm.png'>");
     $("#hangman-img").append("<img class='img-six' src='img/left-leg.png'>");
+
   } else if(this.numberWrongGuessed === 6){
+    this.numberWrongGuessed +=1;
     $("#hangman-img").empty("<img class='img-six' src='img/left-leg.png'>");
     $("#hangman-img").append("<img class='img-seven' src='img/right-leg.png'>");
   }
@@ -77,7 +89,7 @@ $(document).ready(function() {
       var userInput = $("select#userInput").val();
       puzzle.userGuess(userInput);
       $("#puzzle-blanks").empty();
-      if (puzzle.numberWrongGuessed > 7) {
+      if (puzzle.numberWrongGuessed >= 7) {
       $("#puzzle-blanks").append("YOU'RE A LOSER.");
       } else {
         $("#puzzle-blanks").append(puzzle.dashes);
