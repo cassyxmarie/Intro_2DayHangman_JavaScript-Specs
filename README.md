@@ -2,7 +2,7 @@
 
 #### _This program allows the user to play the game hangman., 01/28/2016_
 
-#### By _**Cassandra Culkins & Joseph Arnstein **_
+#### By _**Cassandra Culkins & Joseph Arnstein**_
 
 ## Description
 
