@@ -1,6 +1,6 @@
 # _Hangman_
 
-#### _ This program allows the user to play the game hangman., 01/28/2016_
+#### _This program allows the user to play the game hangman., 01/28/2016_
 
 #### By _**Cassandra Culkins & Joseph Arnstein **_
 
@@ -35,4 +35,4 @@ _If you have any questions or concerns, the authors can be contacted using the G
 *MIT License*
 
 Copyright (c) 2016 **_Cassandra Culkins & Joseph Arnstein_**
--GitHub URL: **_https://github.com/CCulkins_** **_https://github.com/joseph_arnstein_
+-GitHub URL: **_https://github.com/CCulkins_** _https://github.com/joseph_arnstein_
