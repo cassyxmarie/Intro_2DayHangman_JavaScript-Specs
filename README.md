@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application allows the user to play the game Hangman. The user picks letters from a dropdown in order to spell out a puzzle word which is randomly chosen from a word bank. They have 6 wrong guesses before they lose, and the game is over._
+_This application allows the user to play the game Hangman. The user picks letters from a dropdown to assist them in spelling out a puzzle word, which is randomly chosen from a word bank. They have 6 wrong guesses before they lose, and the game is over._
 
 ## Setup/Installation Requirements
 
