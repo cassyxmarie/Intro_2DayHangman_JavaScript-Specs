@@ -1,12 +1,12 @@
 # _Hangman_
 
-#### _This program allows the user to play the game hangman., 01/28/2016_
+#### _This program allows the user to play the puzzle game Hangman., 01/28/2016_
 
 #### By _**Cassandra Culkins & Joseph Arnstein**_
 
 ## Description
 
-_This application allows the user to play the game Hangman. The user picks letters from a dropdown to assist them in spelling out a puzzle word, which is randomly chosen from a word bank. They have 6 wrong guesses before they lose, and the game is over._
+_This application allows the user to play the game Hangman. The user picks letters from a dropdown to assist them in spelling out a puzzle word, which is randomly chosen from a word bank. They have 6 wrong guesses before they lose and the game is over._
 
 ## Setup/Installation Requirements
 
