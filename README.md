@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application allows the user to play the game Hangman. The user picks letters from a dropdown in order to spell out a puzzle word which is randomly chosen from a word bank. They have 6 wrong guesses before they lose, and the game is over. _
+_This application allows the user to play the game Hangman. The user picks letters from a dropdown in order to spell out a puzzle word which is randomly chosen from a word bank. They have 6 wrong guesses before they lose, and the game is over._
 
 ## Setup/Installation Requirements
 
@@ -35,4 +35,4 @@ _If you have any questions or concerns, the authors can be contacted using the G
 *MIT License*
 
 Copyright (c) 2016 **_Cassandra Culkins & Joseph Arnstein_**
--GitHub URL: **_https://github.com/CCulkins_** _https://github.com/joseph_arnstein_
+-GitHub URL: **_https://github.com/CCulkins_** **_https://github.com/joseph_arnstein_**
