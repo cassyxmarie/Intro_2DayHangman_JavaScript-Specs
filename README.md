@@ -15,7 +15,7 @@ _This application allows the user to play the game Hangman. The user picks lette
 
 ## Known Bugs
 
-_The game does not alert the user, or stop the game when the user has won._
+_The game does not alert the user, or stop the game, when the user has won._
 
 ## Support and contact details
 
